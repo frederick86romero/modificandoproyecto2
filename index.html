@@ -5,38 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frederick Edwar Romero</title>
-
+    
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <a href="#inicio">
-            <img src="img/Eidos.png"  alt=" Logo Eidos">
+        <a href="#inicio" class="menu-hamburguesa">
+            <img src="img/icons8-menú-24.png"  alt=" menu" id="menu-hamburguesa">
         </a>
+        <div class="content-menu active" id="menu">
+            <ul>
+                <li><a href="#presentacion">Sobre mi</a></li>
+                <li><a href="#contacto" >Hablemos</a></li>
+                <li><a href="#contacto" >Contacto</a></li>
+            </ul>
+        </div>
         <nav>
             <ul id="menu">
-                <li class="menu-a"><a href="#inicio">Inicio</a></li>
-                <li class="menu-b"><a href="#contacto">Contacto</a></li>
+                <li id="menu-a"><a href="#inicio"  class="modificado">Inicio</a></li>
+                <li id="menu-a"><a href="#contacto" >Contacto</a></li>
             </ul>
         </nav>
-
+ 
     </header> 
     <main>
         <section id="inicio">
             <figure class="foto">
-                <img src="img/frederick.jpg" alt="Frederick" >
+                <img src="img/frederick.jpg" alt="Frederick" id="presentacion" >
+                 
             </figure>
-       
-            <article class="presentacion">
+            
+            <article class="presentacion" >
                 <h1> Hola! soy Frederick Romero</h1>
-                <p>Soy Ingeniero Civil y en estos momentos estoy preparandome en el mundo de desarrollo web en el manejo de las hermientas de Html, Css y el lenguaje de programación Javascript con la Tutoría y Asesoría de la organización Eidos Global,
-                    Me he desempeñado en el area de supervision e inspeccion de procesos constructivos y de calidad en  obras, ensayos en laboratorio de concreto, aseguramiento de calidad del concreto fresco, suelo , en sitio seguimiento 
-                    al proceso de colocacion de acero de refuerzo en columnas vigas losas de fundacion zapatas y cabezales todo acorde a los planos de obra como finalidad de dar buen buen cumplimiento a las normas de constructivas 
-                    y asi evitar posibles riesgos por fallas constructivas. Tengo conocimientos en elaboracion de planos con autocad,y microsoft project para crear una planificacion de obra, adicional a esto  habilidades basicas en criterios de diseño  
-                    de calculos estructurales en edificacion metálicas y de concreto basados en normas internacionales americanas aci-318 por medio de software sap2000 y etabs. <br>
-                <a href="cv/SINTESIS CURRICULAR  FREDERICK ROMERO.pdf" class="boton" download="cvfrederickromero.pdf">Descargar mi CV</a>
+                <p>Soy Ingeniero Civil  con mas de 8 años de experiencia en inspeccion de obras, construccion de urbanismo, 3er Puente sobre el Rio Orinoco(Venezuela)  y Construccion de Planta de siderurgica en ciudad piar (Venezuela) , en estos momentos me capacito como desarrollador de pagina web con los lenguaje Html, Css y Javascript.
+                    <br>
+                <a href="cv/Frederick Romero(cv).pdf" class="boton" download="cvfrederickromero.pdf">Descargar mi CV</a>
             </article>
+            <script src="JS/dinamic.js"></script>  
         </section>
         <section id="contacto">
             <div>
@@ -52,11 +58,13 @@
                     <li class="redes-c"><a href="https://www.linkedin.com/in/frederick-romero-1696ab72/"><img src="img/linkedin.png" width="40"></a></li>
                 </ul>
             </nav>
+            
         </section>
     </main>
 
     
-    <footer>Codigo Latam</footer>
+    <footer>Ingieniero Civil - Desarrollador Web Jr.</footer>
+    
 </body>
 
 </html>

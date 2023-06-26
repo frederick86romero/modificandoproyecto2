@@ -18,12 +18,63 @@
     /* Para que el scrolleo en la one page sea suave */
     scroll-behavior: smooth;
 }
+/*estilos para el menu hamburguesa*/
+.menu-hamburguesa{
+    margin: 40px 50px;
+    position:relative;
+    z-index: 10;
+}
+.menu-hamburguesa,img{
+    vertical-align: top;
+    width: 80px;
+    cursor: pointer;
+}
+.active{
+    transform: translate(-600px);
+
+}
+.opacity{
+   background-color: rgba(0,0,0,0.5);
+   transition: all .5s ease;
+}
+
+/*estilos para el contenedor*/
+.content-menu{
+    background-color:rgb(42,42,42) ;
+    box-shadow: 2px 0px 5px 2px rgb(66,66,66) ;
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+}
+
+.content-menu ul{
+    padding: 60px 0px 20px 0px;
+    list-style: none;
+
+}
+
+.content-menu ul li
+{color: white;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+.content-menu ul li:hover{
+    background-color: rgb(228,228,228);
+    color: rgb(42,42,42) ;
+}
 
 body{
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     line-height: 1.2;
-    background-color:  #fbfbfb;
+    background-color:  #d7fafff7;
     color:  #0f0f0f;
 }
 h1{
@@ -85,7 +136,7 @@ header{
     height: 90px;
     width: 100%;
     position: fixed;
-    background-color: #fbfbfb;
+    background-color: #e7e9eafb;
     top: 0;
     left: 0;
     box-shadow: 0 3px 10px -5px #0f0f0fd3;
@@ -93,13 +144,12 @@ header{
 ul#menu{
     display:flex;
     font-size: 20px;
+    align-items: center;
         
 }
-li.menu-a a{
+li#menu-a, a{
     padding: 16px;    
 }
-li.menu-b a{
-    padding: 16px; } 
 
 section{
    display: flex;
@@ -116,12 +166,13 @@ section#inico{
     
 }
 figure.foto{
-    margin-bottom: 20px;
-   
+    margin-bottom: 20px; 
     
-    
+  }
 
-}
+
+
+
 figure.foto img{
     display: flex;
     margin-left: auto;
@@ -206,12 +257,24 @@ footer{
     display: flex;
     justify-content:space-evenly;
    }
-    }
-    .menu-a:hover, 
-    .menu-b:hover,
-    a.boton:hover{
-        background-color: rgb(71, 52, 69);
-        transition: background-color 0.2s;
+
+   
+   li#menu-a:hover,
+   
+      a.boton:hover
+   {
+    background-color: rgb(179, 139, 175);
+    transition: background-color 0.2s;
+   }
+     
+    
+    .modificado{
+        background-color: blueviolet;
+        color: #fff;
+        border: 2px dashed #fff;
+        font-size: 22px;
+
     }
     
+}
     
